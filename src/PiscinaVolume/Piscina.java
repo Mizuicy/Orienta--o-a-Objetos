@@ -4,8 +4,10 @@ public class Piscina {
     public static void main(String[] args) {
         Leitor leitor = new Leitor();
 
-        /* Criando uma variavel com o nome da class que foi criada é possivel pegar os dados dentro dela
-        com um new */ 
+        /*
+         * Criando uma variavel com o nome da class que foi criada é possivel pegar os
+         * dados dentro dela com um new
+         */
         DadosPiscina primeirPiscina = new DadosPiscina();
 
         primeirPiscina.comprimento = leitor.lerInteiro("Digite aqui o comprimento da piscina  ↡");
@@ -14,6 +16,6 @@ public class Piscina {
 
         primeirPiscina.profundidade = leitor.lerInteiro("Digite aqui a profundidade da piscina  ↡");
 
-        System.out.println("O volume dessa piscina é "+ primeirPiscina.volume() + "m³.");
+        System.out.println("O volume dessa piscina é " + primeirPiscina.volume() + "m³.");
     }
 }
